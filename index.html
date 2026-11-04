@@ -229,6 +229,8 @@ p{margin:0}
 .model h3{font-size:1.5rem;line-height:1.15}
 .model p{font-size:.95rem;color:var(--muted);flex:1}
 .model.feature .cap > div{flex:1;min-width:240px}
+.wa-model{display:block;margin-top:10px;text-align:center;font-size:.82rem;font-weight:600;color:#1f7a4d;text-decoration:none;padding:8px;border:1px solid #1f7a4d33;border-radius:8px}
+.wa-model:hover{background:#1f7a4d12}
 .model .row{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-top:12px;flex-wrap:wrap}
 .model.feature .row{margin-top:0}
 .model .price{font-size:.9rem;color:var(--brass-text);font-weight:600}
@@ -2070,7 +2072,7 @@ Object.keys(DMM_PHOTOS16).forEach(function (k) { DMM_PHOTOS[k] = DMM_PHOTOS16[k]
         '<button type="button" class="fav-btn' + (fav ? " active" : "") + '" aria-pressed="' + fav + '" aria-label="' + (fav ? "Retirer " : "Ajouter ") + esc(it.name) + ' de mes favoris">' + HEART + '</button></figure>' +
         '<div class="cap"><h3>' + esc(it.name) + '</h3><p>' + esc(it.desc) + '</p>' +
         (it.photo ? "" : '<div class="combo"><span class="chip-s"><i style="background:' + w + '"></i>' + esc(DMM.WOODN[it.wood]) + '</span>' + (f ? '<span class="chip-s"><i style="background:' + f.c + '"></i>' + esc(f.n) + '</span>' : '') + '</div>') +
-        '<div class="row"><span class="price">Sur devis</span><button type="button" class="btn ghost small" data-piece="' + esc(cur.piece) + '" data-model="' + esc(it.name) + '">Demander un devis</button></div></div></article>';
+        '<div class="row"><span class="price">Sur devis</span><button type="button" class="btn ghost small" data-piece="' + esc(cur.piece) + '" data-model="' + esc(it.name) + '">Demander un devis</button></div><a class="wa-model" target="_blank" rel="noopener" href="https://wa.me/' + CONFIG.whatsapp + '?text=' + encodeURIComponent('Bonjour, je souhaite un devis pour : ' + cur.piece + ' ' + it.name + '.\nDimensions souhaitées : \nBois / tissu : ') + '">Devis rapide sur WhatsApp</a></div></article>';
     }).join("");
   }
   function render() {
