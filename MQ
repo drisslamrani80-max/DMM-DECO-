@@ -1,0 +1,6 @@
+<!doctype html>
+<meta charset="utf-8">
+<title>D.M.M DECO</title>
+<script>location.replace(/Mobi|Android|iPhone/i.test(navigator.userAgent) ? "mobile_1.html" : "index_1.html");</script>
+<meta http-equiv="refresh" content="0;url=index_1.html">
+<a href="index_1.html">D.M.M DECO</a>
