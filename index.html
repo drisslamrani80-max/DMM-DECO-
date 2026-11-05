@@ -973,7 +973,8 @@ p{margin:0}
           <p class="price-line">Prix&nbsp;: sur devis. Prêt en 2 à 3 semaines.</p>
           <div class="actions">
             <a class="btn" id="send-wa" href="#" target="_blank" rel="noopener">Envoyer sur WhatsApp</a>
-            <a class="btn ghost" id="send-mail" href="#">Envoyer par e-mail</a>
+            <a class="btn ghost" id="send-mail" href="#" target="_blank" rel="noopener">Envoyer par e-mail</a>
+            <p style="font-size:.8rem;margin:8px 0 0;opacity:.8">Le bouton ne s'ouvre pas ? Écrivez-nous à <strong>d.m.m.deco26@gmail.com</strong></p>
           </div>
           <p class="free">Le devis est gratuit et sans engagement. Nous vous répondons avec un prix pour votre combinaison exacte.</p>
         </aside>
@@ -1327,12 +1328,12 @@ document.getElementById("canapes-modal").addEventListener("click", function(e){
     }
     var msg = message();
     document.getElementById("send-wa").href = "https://wa.me/" + CONFIG.whatsapp + "?text=" + encodeURIComponent(msg);
-    document.getElementById("send-mail").href = "mailto:" + CONFIG.email + "?subject=" + encodeURIComponent("Demande de devis D.M.M DECO") + "&body=" + encodeURIComponent(msg);
+    document.getElementById("send-mail").href = "https://mail.google.com/mail/?view=cm&fs=1&to=" + encodeURIComponent(CONFIG.email) + "&su=" + encodeURIComponent("Demande de devis D.M.M DECO") + "&body=" + encodeURIComponent(msg);
     document.getElementById("foot-wa").href = "https://wa.me/" + CONFIG.whatsapp;
     var waFloat = document.getElementById("wa-float");
     if (waFloat) { waFloat.href = "https://wa.me/" + CONFIG.whatsapp; }
     var footMail = document.getElementById("foot-mail");
-    if (footMail) { footMail.href = "mailto:" + CONFIG.email; }
+    if (footMail) { footMail.href = "https://mail.google.com/mail/?view=cm&fs=1&to=" + encodeURIComponent(CONFIG.email); footMail.target = "_blank"; footMail.rel = "noopener"; }
   }
   var form = document.getElementById("quote-form");
   form.addEventListener("input", update);
