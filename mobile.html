@@ -28,6 +28,9 @@
   "telephone": "+212774425807",
   "email": "d.m.m.deco26@gmail.com",
   "areaServed": { "@type": "Country", "name": "Maroc" },
+  "address": { "@type": "PostalAddress", "addressLocality": "Marrakech", "addressCountry": "MA" },
+  "openingHours": "Mo-Su",
+  "taxID": "002310520000055",
   "description": "Mobilier d'intérieur fabriqué sur commande : canapés, fauteuils, tables, bureaux, coiffeuses et têtes de lit, en bois rouge, noyer, chêne, thuya, cèdre et plus encore, avec le tissu de votre choix.",
   "priceRange": "Sur devis",
   "makesOffer": [
@@ -434,6 +437,26 @@ p{margin:0}
   .reveal{opacity:0;transform:translateY(22px);transition:opacity .7s cubic-bezier(.2,.7,.2,1),transform .7s cubic-bezier(.2,.7,.2,1)}
   .reveal.in{opacity:1;transform:none}
 }
+
+.legal{margin-top:34px;padding:22px 24px;border:1px solid rgba(255,255,255,.18);border-radius:10px;background:rgba(255,255,255,.04)}
+.legal h4{margin:0 0 12px}
+.legal dl{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:12px 24px;margin:0}
+.legal dt{font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;opacity:.7}
+.legal dd{white-space:nowrap;margin:2px 0 0;font-weight:600;font-variant-numeric:tabular-nums;word-break:break-word}
+.legal p{margin:14px 0 0;font-size:.82rem;opacity:.75}
+
+.eng{display:grid;grid-template-columns:repeat(4,1fr);gap:clamp(16px,2.4vw,28px);list-style:none;padding:0;margin:0}
+.eng li{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:24px 22px}
+.eng b{display:block;font-family:var(--serif);font-size:2.2rem;line-height:1;color:var(--brass-text);margin-bottom:10px}
+.eng h3{font-size:1.2rem}.eng p{margin:8px 0 0;color:var(--muted);font-size:.95rem}
+@media(max-width:900px){.eng{grid-template-columns:1fr 1fr}}@media(max-width:520px){.eng{grid-template-columns:1fr}}
+.lg-links{display:flex;flex-wrap:wrap;gap:8px 22px;margin:18px 0 0}
+.lg-links button{background:none;border:0;padding:0;color:inherit;font:inherit;font-size:.88rem;text-decoration:underline;cursor:pointer;opacity:.85}
+dialog.lg{max-width:min(720px,calc(100vw - 32px));max-height:86vh;overflow:auto;border:1px solid var(--line);border-radius:12px;background:var(--surface);color:var(--text);padding:28px 30px}
+dialog.lg::backdrop{background:rgba(20,8,14,.6)}
+dialog.lg h3{font-size:1.7rem;margin-bottom:12px}dialog.lg h4{margin:18px 0 4px;font-family:var(--sans);font-size:1rem}
+dialog.lg p,dialog.lg li{font-size:.95rem;line-height:1.6}dialog.lg ul{padding-left:20px}
+dialog.lg .x{float:right;background:none;border:1px solid var(--line);border-radius:8px;color:inherit;padding:6px 12px;cursor:pointer}
 </style>
 <style id="enh">
 .sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
@@ -879,6 +902,21 @@ body.modal-open .tabbar{display:none}
     </div>
   </section>
 
+  <section class="sec" id="engagements" aria-label="Nos garanties et conditions">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2>Nos garanties et conditions</h2>
+        <p>Atelier à Marrakech, ouvert 7 jours sur 7. Nous livrons dans tout le Maroc.</p>
+      </div>
+      <ul class="eng">
+        <li><b>5 ans</b><h3>Garantie</h3><p>Chaque meuble fabriqué par D.M.M DECO est garanti 5 ans.</p></li>
+        <li><b>Maroc</b><h3>Livraison dans tout le pays</h3><p>Les frais dépendent de la ville et de la quantité. Généralement, D.M.M DECO les prend en charge.</p></li>
+        <li><b>50 / 50</b><h3>Paiement en deux temps</h3><p>50 % d'avance à la commande, 50 % à la livraison, après vérification et validation par le client. Virement ou chèque.</p></li>
+        <li><b>Offert</b><h3>Retapissage</h3><p>Travaux de retapissage offerts à nos clients, sous réserve des conditions.</p></li>
+      </ul>
+    </div>
+  </section>
+
   <section class="sec alt" id="housses" aria-label="Housses de protection">
     <div class="wrap">
       <div class="sec-head">
@@ -1062,6 +1100,7 @@ body.modal-open .tabbar{display:none}
       <div class="brand">
         <a class="logo" href="#accueil" aria-label="D.M.M DECO, haut de page"><b>D.M.M</b><span>DECO</span></a>
         <p>Mobilier d'intérieur sur commande. Bois et tissus de premier choix, conseil et housse de protection offerts.</p>
+        <p>Marrakech, Maroc · Ouvert 7 jours sur 7 · Livraison dans tout le Maroc</p>
       </div>
       <div>
         <h4>Collections</h4>
@@ -1089,8 +1128,23 @@ body.modal-open .tabbar{display:none}
         </ul>
       </div>
     </div>
+    <div class="legal">
+      <h4>Informations légales</h4>
+      <dl>
+        <div><dt>Raison sociale</dt><dd>D.M.M DECO</dd></div>
+        <div><dt>Forme juridique</dt><dd>SARL</dd></div>
+        <div><dt>Siège</dt><dd>Marrakech, Maroc</dd></div>
+        <div><dt>ICE</dt><dd>002310520000055</dd></div>
+        <div><dt>RC</dt><dd>98217</dd></div>
+        <div><dt>IF</dt><dd>37622586</dd></div>
+        <div><dt>Patente</dt><dd>64600849</dd></div>
+        <div><dt>CNSS</dt><dd>1634938</dd></div>
+      </dl>
+      <p>Société à responsabilité limitée (SARL) établie à Marrakech. Les devis sont établis sur demande, valables 7 jours, hors taxe, TVA 20 % en sus.</p>
+      <div class="lg-links"><button type="button" data-lg="lg-mentions">Mentions légales</button><button type="button" data-lg="lg-cgv">Conditions de vente</button><button type="button" data-lg="lg-conf">Confidentialité</button></div>
+    </div>
     <div class="bottom">
-      <span>© D.M.M DECO — Mobilier d'intérieur sur commande.</span>
+      <span>© 2026 D.M.M DECO SARL — Marrakech — ICE 002310520000055 — Tous droits réservés.</span>
       <span>Prix sur devis · Fabrication en 2 à 3 semaines</span>
     </div>
   </div>
@@ -2312,6 +2366,27 @@ Object.keys(DMM_PHOTOS16).forEach(function (k) { DMM_PHOTOS[k] = DMM_PHOTOS16[k]
   var io2 = ("IntersectionObserver" in window) ? new IntersectionObserver(function (es) { es.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add("in"); io2.unobserve(e.target); } }); }, {threshold: .1}) : null;
   document.querySelectorAll(".pick").forEach(function (t) { if (io2) { t.classList.add("reveal"); io2.observe(t); } });
 })();
+</script>
+
+<dialog class="lg" id="lg-mentions"><button class="x" type="button" data-close>Fermer</button><h3>Mentions légales</h3>
+<p><b>D.M.M DECO</b>, société à responsabilité limitée (SARL), établie à Marrakech, Maroc.</p>
+<ul><li>ICE : 002310520000055</li><li>RC : 98217</li><li>IF : 37622586</li><li>Patente : 64600849</li><li>CNSS : 1634938</li></ul>
+<p>Activité : fabrication sur mesure de mobilier d'intérieur. Ouvert 7 jours sur 7. WhatsApp : +212 7 74 42 58 07. E-mail : d.m.m.deco26@gmail.com.</p>
+<p>Les photos présentées sont des modèles de référence ; chaque meuble est fabriqué sur commande dans le bois et le tissu choisis.</p></dialog>
+<dialog class="lg" id="lg-cgv"><button class="x" type="button" data-close>Fermer</button><h3>Conditions de vente</h3>
+<h4>Devis</h4><p>Les devis sont gratuits, établis sur demande, valables 7 jours. Les prix sont indiqués hors taxe, TVA 20 % en sus.</p>
+<h4>Paiement</h4><p>50 % d'avance à la commande et 50 % à la livraison, après vérification et validation par le client. Paiement par virement ou chèque.</p>
+<h4>Délai</h4><p>Fabrication en 2 à 3 semaines à partir de la validation de la commande.</p>
+<h4>Livraison</h4><p>Nous livrons dans tout le Maroc. Les frais dépendent de la ville et de la quantité ; généralement, ils sont pris en charge par D.M.M DECO.</p>
+<h4>Garantie</h4><p>Garantie de 5 ans sur les meubles fabriqués par D.M.M DECO, selon les conditions communiquées avec le devis.</p>
+<h4>Services offerts</h4><p>Housse de protection offerte avec la commande. Travaux de retapissage offerts à nos clients, sous réserve des conditions.</p></dialog>
+<dialog class="lg" id="lg-conf"><button class="x" type="button" data-close>Fermer</button><h3>Politique de confidentialité</h3>
+<p>Nous recueillons uniquement les informations nécessaires pour répondre à votre demande de devis : votre nom et votre numéro de téléphone, et le détail de votre projet.</p>
+<p>Ces informations restent confidentielles et ne sont ni vendues ni diffusées. Les noms de nos clients sont traités avec discrétion, conformément à la loi marocaine sur la protection des données personnelles.</p>
+<p>Pour consulter, corriger ou faire supprimer vos données : d.m.m.deco26@gmail.com.</p></dialog>
+<script>
+document.querySelectorAll("[data-lg]").forEach(function(b){b.addEventListener("click",function(){var d=document.getElementById(b.dataset.lg);if(d&&d.showModal)d.showModal();});});
+document.querySelectorAll("dialog.lg").forEach(function(d){d.addEventListener("click",function(e){if(e.target===d||e.target.hasAttribute("data-close"))d.close();});});
 </script>
 <nav class="tabbar" id="tabbar" aria-label="Navigation rapide">
   <a href="#accueil" data-t="accueil" class="on"><svg viewBox="0 0 24 24"><path d="M3 11l9-7 9 7"/><path d="M5 10v10h14V10"/></svg>Accueil</a>
