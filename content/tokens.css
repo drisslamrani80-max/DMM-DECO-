@@ -1,0 +1,12 @@
+:root{
+  --bg:#FBF1E6; --bg-alt:#F3E0CE; --surface:#FFF9F3;
+  --text:#241A33; --muted:#645970; --line:#E6CFB9;
+  --brass:#D9895A; --brass-text:#9C4524; --on-brass:#24100A;
+  --emerald:#1D1745; --emerald-2:#2C2466; --oxblood:#4E1A4A;
+  --on-dark:#FBF1E6; --on-dark-muted:#CBC3DE;
+  --serif:"Bodoni Moda","Didot","Bodoni 72",Georgia,"Times New Roman",serif;
+  --sans:"Hanken Grotesk",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px);
+  padding-bottom:env(safe-area-inset-bottom,0px);
+}
