@@ -1,0 +1,23 @@
+{
+  "@context": "https://schema.org",
+  "@type": "FurnitureStore",
+  "name": "D.M.M DECO",
+  "alternateName": ["DMM DECO", "DMM Deco", "D.M.M Deco"],
+  "url": "https://drisslamrani80-max.github.io/DMM-DECO-/",
+  "telephone": "+212774425807",
+  "email": "d.m.m.deco26@gmail.com",
+  "areaServed": { "@type": "Country", "name": "Maroc" },
+  "address": { "@type": "PostalAddress", "addressLocality": "Marrakech", "addressCountry": "MA" },
+  "openingHours": "Mo-Su",
+  "taxID": "002310520000055",
+  "description": "Mobilier d'intérieur fabriqué sur commande : canapés, fauteuils, tables, bureaux, coiffeuses et têtes de lit, en bois rouge, noyer, chêne, thuya, cèdre et plus encore, avec le tissu de votre choix.",
+  "priceRange": "Sur devis",
+  "makesOffer": [
+    { "@type": "Offer", "itemOffered": { "@type": "Product", "name": "Canapés sur mesure" } },
+    { "@type": "Offer", "itemOffered": { "@type": "Product", "name": "Fauteuils sur mesure" } },
+    { "@type": "Offer", "itemOffered": { "@type": "Product", "name": "Tables et tables à manger sur mesure" } },
+    { "@type": "Offer", "itemOffered": { "@type": "Product", "name": "Bureaux sur mesure" } },
+    { "@type": "Offer", "itemOffered": { "@type": "Product", "name": "Coiffeuses sur mesure" } },
+    { "@type": "Offer", "itemOffered": { "@type": "Product", "name": "Têtes de lit sur mesure" } }
+  ]
+}
