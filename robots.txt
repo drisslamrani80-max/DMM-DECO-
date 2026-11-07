@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://drisslamrani80-max.github.io/DMM-DECO-/sitemap.xml
+Sitemap: https://dmm-deco.vercel.app/sitemap.xml
